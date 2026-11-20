@@ -5,7 +5,7 @@ Two static sample browsers, with all playback audio stored in this repository:
 - **[50-input experiment](https://leduochen.github.io/telephone-game-showcase/)** — 50 English source recordings, six conditions, three independent runs, ten hops; 8,997 recorded outputs out of 9,000 planned.
 - **[Emotion & prosody](https://leduochen.github.io/telephone-game-showcase/emotion.html)** — five selected A/B pairs from the 30-pair experiment, four audio models, three runs, ten hops; 1,190 recorded outputs out of 1,200 planned.
 
-The interface and explanatory text are in English. Original source transcripts, generated transcripts, and model-native captions are preserved in their original language, including Chinese. Each page has source provenance, experiment settings, exact prompts, audio players, and three run columns. Navigation connects the two experiments directly.
+The interface and explanatory text are in English. Original source transcripts, generated transcripts, and model-native captions are preserved in their original language, including Chinese. Each page has source provenance, experiment settings, exact prompts, and audio players. The 50-input page compares three runs in columns. The emotion/prosody page lists all five inputs; each has 12 expandable model/run sections showing H0–H10 in order, with A/B side by side. Navigation connects the two experiments directly.
 
 ## Deploy with GitHub Pages
 
@@ -52,7 +52,7 @@ The selected pairs include every available model/run/hop, not just the highlight
 ## Audio and files
 
 - `index.html`, `emotion.html`: the two pages.
-- `assets/site.css`, `assets/app.js`: shared layout and browser logic.
+- `assets/site.css`: shared styling; `assets/app.js`: the 50-input browser; `assets/emotion.js`: expandable, full-chain prosody timelines.
 - `assets/data/`: compact source metadata and per-input result files; loaded on demand.
 - `assets/audio/real50/`: 9,047 AAC playback files (50 sources + 8,997 outputs), 48 kb/s, encoded from the experiment WAVs without gain, trim, or speed changes.
 - `assets/audio/prosody/`: 1,200 lossless FLAC files (10 sources + 1,190 outputs). Every decoded PCM sample was checked against the experiment WAV. No gain, trim, resampling, or speed changes during this export.
