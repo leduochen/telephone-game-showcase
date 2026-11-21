@@ -4,6 +4,7 @@
   const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const names = {'live-audio':'GPT-Live','realtime-audio':'GPT-Realtime','gemini-audio':'Gemini','grok-audio':'Grok'};
   const observations = {
+    debate_seg_055_056_s8: 'The source recordings are quiet. In Realtime run 2, H1 distinguishes who loses whom; by H4, side A changes from Xiaoming dying to Xiaohong lacking his support. Realtime run 1 and all three Grok runs retain the role contrast.',
     debate_seg_016_017_s0: 'Grok retains the chicken/duck distinction across all ten hops in each of the three runs.',
     iud_006_pid_f05: 'In Realtime run 2, H1 distinguishes the readings; H2 becomes ambiguous; by H3, both sides mean taking the lamp upstairs. Run 3 preserves the contrast.',
     contra_50002: 'Realtime run 2 preserves the statement/question contrast through H5. At H6, “receipt” becomes “receiver” and later “recipient”, while the question form remains. In Grok run 1, the H1 ASR text is identical for A and B; the experiment’s pitch analysis describes a falling ending for A and a rising ending for B at H1 and H10.',
@@ -75,7 +76,7 @@
     if(target)target.scrollIntoView({behavior:'instant',block:'start'});
   }
   async function init() {
-    data=await getJSON('assets/data/prosody.json?v=2');
+    data=await getJSON('assets/data/prosody.json?v=3');
     const allRows=await Promise.all(data.pairs.map(pair=>getJSON(`assets/data/prosody/${pair.pair_id}.json`)));
     data.pairs.forEach((pair,i)=>rowsByPair.set(pair.pair_id,allRows[i]));
     renderSettings();

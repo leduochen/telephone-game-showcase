@@ -15,7 +15,7 @@ Published continuous source segments were converted to mono PCM16 and resampled 
 
 | Source | Included pairs | Attribution / publication | Published license |
 | --- | ---: | --- | --- |
-| [DEBATE](https://zenodo.org/records/15609922) | 3 | Haotian Guo, Jing Han, Yongfeng Tu, Shihao Gao, Shengfan Shen, Wulong Xiang, Weihao Gan and Zixing Zhang. DEBATE, version 1, Zenodo record 15609922. Mandarin human recordings of prosodic boundaries. | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) |
+| [DEBATE](https://zenodo.org/records/15609922) | 4 | Haotian Guo, Jing Han, Yongfeng Tu, Shihao Gao, Shengfan Shen, Wulong Xiang, Weihao Gan and Zixing Zhang. DEBATE, version 1, Zenodo record 15609922. Mandarin human recordings of prosodic boundaries. | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) |
 | [IUDvPP](https://github.com/KwekuYamoah/IUDvPP) | 1 | IUDvPP authors, repository maintained by Kweku Yamoah. Human instruction recordings from participant pid_f05. | [MIT repository notice](licenses/IUDvPP-LICENSE.txt); no separate audio license was published. |
 | [ContraProST](https://github.com/apple-aiml-research/ml-speech-is-more-than-words) | 1 | Apple’s *Speech Is More Than Words* / ContraProST dataset authors. [Publication](https://aclanthology.org/2024.wmt-1.119/). Source audio is the publisher’s existing synthesized speech. | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). [Saved publisher license](licenses/ContraProST-LICENSE.txt). |
 
